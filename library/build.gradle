@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'eclipse'
 
 // gradle.properties holds credentials and is not checked in
 def gradleProperties = new File('gradle.properties')
@@ -22,4 +23,8 @@ test {
         outputs.upToDateWhen { false }
         showStandardStreams = true
     }
+}
+
+eclipse {
+    project.name = 'overpasser-library'
 }
