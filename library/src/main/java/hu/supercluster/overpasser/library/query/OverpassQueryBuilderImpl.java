@@ -24,7 +24,7 @@ class OverpassQueryBuilderImpl implements OverpassQueryBuilder {
         return append(
                 String.format(
                         LOCALE,
-                        "[\"%s\"%s%s]",
+                        "[%s%s%s]",
                         name, rel, quotedValue
                 )
         );
